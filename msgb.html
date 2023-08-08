@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            background-image: url('msgb.png');
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        .container {
+            background-color: rgb(6, 6, 6);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 2px 6px rgba(252, 233, 233, 0.1);
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            margin: 0;
+           color:rgb(251, 100, 241);
+           font-style: bold;
+        }
+
+        label {
+            font-size: 24px;
+            margin-bottom: 10px;
+            font-family: 'Times New Roman', Times, serif;
+     
+        }
+
+        input[type="text"] {
+            width: 40%;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            margin-bottom: 10px;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #45a049;
+            transform: scale(1.05);
+
+        }
+
+        #msg-op {
+        
+         
+            font-size: 18px;
+            background-color: #00ffe5;
+
+            border: 2px solid #8335f0;
+            padding: 10px;
+            border-radius: 4px;
+            margin-top: 20px;
+        
+        }
+    </style>
+</head>
+
+<body style="background-color: rgb(0, 217, 255)">
+    <div class="container">
+        <h2>Text Message</h2>
+    </div>
+    <label>Enter a message</label>
+    <label>📧</label>
+    <input type="text" id="msg-ip" placeholder="Enter your message"><br>
+    <button id="click" onclick="getMessage()">Submit</button>
+    <p id="msg-op"></p>
+    
+    <script src="msgb.js"></script>
+
+</body>
+</html>
